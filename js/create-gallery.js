@@ -10,11 +10,11 @@ const refs = {
 
 // Создание и рендер разметки по массиву данных galleryItems из app.js и предоставленному шаблону.
 
-const marcupGallery = createGalleryMarcup(ItemsDefault)
+const marcupGallery = createGalleryMarkup(ItemsDefault)
 
 refs.galleryItems.insertAdjacentHTML('beforeend', marcupGallery);
 
-function createGalleryMarcup(elements) {
+function createGalleryMarkup(elements) {
     return elements.map(({ preview, original, description }) => {
         return `<li class="gallery__item">
   <a
